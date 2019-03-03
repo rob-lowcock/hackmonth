@@ -1,0 +1,54 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: $background;
+    color: $text;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+}
+
+.billboard {
+    background: $primary linear-gradient(90deg, $primary 0%, $secondary 100%);
+
+    padding: 45px 0 40px;
+
+    h1, h2 {
+        color: $background;
+        text-shadow: $text 0 0 5px;
+    }
+
+    h2 {
+        font-weight: 300;
+    }
+
+    .card {
+        border: none;
+        background-color: $background;
+        color: $text;
+        text-align: center;
+    }
+}
+
+.how-it-works {
+    padding-top: 20px;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        font-size: 1.4em;
+        padding: 0;
+    }
+}
