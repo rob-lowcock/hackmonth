@@ -28,14 +28,24 @@
             </div>
             <div class="content">
                 <div class="container">
-                    <div class="how-it-works">
-                        <h1>How it works</h1>
-                        <ul>
-                            <li><i class="fas fa-rocket"></i> Build a launch a project in just one month</li>
-                            <li><i class="fab fa-github"></i> Link your GitHub account to track progress</li>
-                            <li><i class="fas fa-users"></i> Get support and encouragement from other people attempting the same thing</li>
-                            <li><i class="fas fa-flag-checkered"></i> When you tag your v1 release, you're done!</li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-12 how-it-works">
+                            <h1>How it works</h1>
+                            <ul>
+                                <li><i class="fas fa-rocket"></i> Build a launch a project in just one month</li>
+                                <li><i class="fab fa-github"></i> Link your GitHub account to track progress</li>
+                                <li><i class="fas fa-users"></i> Get support and encouragement from other people attempting the same thing</li>
+                                <li><i class="fas fa-flag-checkered"></i> When you tag your v1 release, you're done!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer-call-to-action">
+                                <h4>Get Started</h4>
+                                <github-sign-in-button></github-sign-in-button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -10706,3 +10706,17 @@ h6 {
   padding: 0;
 }
 
+.footer-call-to-action {
+  background-color: #A7CCED;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-call-to-action h4 {
+  display: inline;
+  margin-right: 8px;
+  vertical-align: -3px;
+}
+

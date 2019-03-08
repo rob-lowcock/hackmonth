@@ -52,3 +52,17 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0;
     }
 }
+
+.footer-call-to-action {
+    background-color: $tertiary;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+
+    h4 {
+        display: inline;
+        margin-right: 8px;
+        vertical-align: -3px;
+    }
+}
