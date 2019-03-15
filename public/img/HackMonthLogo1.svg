@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>HackMonthLogo1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M28.5618945,2.19577561 L28.5618945,31.1764003 L28.5353653,32.0054217 L28.5618945,32.0234209 L28.5618945,32.1823472 L31.7700832,34.2000817 L50.9620254,47.2212449 L50.9620254,83.0417336 C48.0743051,83.6693776 45.0757631,84 42,84 C18.8040405,84 0,65.1959595 0,42 C0,23.5036443 11.9563559,7.79984511 28.5618945,2.19577561 Z M32.8800432,0.992913061 C35.8163157,0.342795515 38.8681257,0 42,0 C65.1959595,0 84,18.8040405 84,42 C84,60.554942 71.9677819,76.2996089 55.2801742,81.857172 L55.2801742,44.8787732 L32.8800432,29.7339819 L32.8800432,0.992913061 Z M32.915627,58.5269192 L32.915627,41.253167 L28.5974782,38.5373424 L28.5631796,58.5386457 C25.9279023,59.4479312 24.0349176,61.9500391 24.0349176,64.8942774 C24.0349176,68.6065309 27.0442936,71.6159069 30.756547,71.6159069 C34.4688005,71.6159069 37.4781765,68.6065309 37.4781765,64.8942774 C37.4781765,61.9372855 35.5687565,59.4262626 32.915627,58.5269192 Z M30.756547,68.2754607 C28.8891711,68.2754607 27.3753637,66.7616534 27.3753637,64.8942774 C27.3753637,63.0269014 28.8891711,61.5130941 30.756547,61.5130941 C32.623923,61.5130941 34.1377304,63.0269014 34.1377304,64.8942774 C34.1377304,66.7616534 32.623923,68.2754607 30.756547,68.2754607 Z" id="path-1"></path>
+        <filter x="-7.1%" y="-7.1%" width="114.3%" height="114.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.216892483 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Combined-Shape">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

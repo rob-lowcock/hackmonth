@@ -16,6 +16,7 @@
         <div id="app">
             <div class="content billboard">
                 <div class="container">
+                    <img src="/img/HackMonthLogo1.svg" alt="" class="logo float-left">
                     <div class="call-to-action float-right card">
                         <div class="card-body">
                             <h4>Get Started</h4>

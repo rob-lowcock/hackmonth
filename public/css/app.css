@@ -10688,6 +10688,13 @@ h6 {
   font-weight: 300;
 }
 
+.billboard .logo {
+  width: 84px;
+  height: 84px;
+  display: block;
+  margin-right: 20px;
+}
+
 .billboard .card {
   border: none;
   background-color: #F6F4F3;
