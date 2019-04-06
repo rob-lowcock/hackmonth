@@ -3,10 +3,15 @@
         background: #fff;
         border: 1px solid #ccc;
         background: linear-gradient(0deg, #eee 0%, #fff 100%);
+        color: #545E75;
 
         border-radius: 4px;
         padding: 6px 10px;
         font-size: 1.1em;
+    }
+
+    .github-sign-in:hover {
+        text-decoration: none;
     }
 
     i {
@@ -17,15 +22,15 @@
 </style>
 
 <template>
-    <button class="github-sign-in">
+    <a class="github-sign-in" href="/login/github">
         <i class="fab fa-github"></i> Sign In with GitHub
-    </button>
+    </a>
 </template>
 
 <script>
     export default {
         mounted() {
-            console.log('Button mounted.')
+            // console.log('Button mounted.')
         }
     }
 </script>

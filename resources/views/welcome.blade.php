@@ -16,14 +16,7 @@
         <div id="app">
             <div class="content billboard">
                 <div class="container">
-                    <img src="/img/HackMonthLogo1.svg" alt="" class="logo float-left">
-                    <div class="call-to-action float-right card">
-                        <div class="card-body">
-                            <h4>Get Started</h4>
-                            <github-sign-in-button></github-sign-in-button>
-                        </div>
-                    </div>
-                    <h1>HackMonth 2019</h1>
+                    <h1>hack<span>month <strong>2019</strong></span></h1>
                     <h2>Challenge yourself to code something in 30 days</h2>
                 </div>
             </div>
@@ -33,10 +26,10 @@
                         <div class="col-12 how-it-works">
                             <h1>How it works</h1>
                             <ul>
-                                <li><i class="fas fa-rocket"></i> Build a launch a project in just one month</li>
-                                <li><i class="fab fa-github"></i> Link your GitHub account to track progress</li>
-                                <li><i class="fas fa-users"></i> Get support and encouragement from other people attempting the same thing</li>
-                                <li><i class="fas fa-flag-checkered"></i> When you tag your v1 release, you're done!</li>
+                                <li><img src="/img/space-rocket-flying.svg" alt="" width="24px"> Build a launch a project in just one month</li>
+                                <li><img src="/img/developer-community-github-1.svg" alt="" width="24px"> Link your GitHub account to track progress</li>
+                                <li><img src="/img/multiple-chat.svg" alt="" width="24px"> Get support and encouragement from other people attempting the same thing</li>
+                                <li><img src="/img/business-climb-top.svg" alt="" width="24px"> When you tag your v1 release, you're done!</li>
                             </ul>
                         </div>
                     </div>
