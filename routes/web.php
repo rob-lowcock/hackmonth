@@ -16,4 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('login/github', 'Auth\LoginController@redirectToProvider')->name('login');
-Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');
+Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback')->name('loginCallback');
+
+Route::get('sso', 'Auth\SSOController@handleLogin')->name('sso');
