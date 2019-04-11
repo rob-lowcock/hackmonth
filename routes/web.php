@@ -19,3 +19,5 @@ Route::get('login/github', 'Auth\LoginController@redirectToProvider')->name('log
 Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback')->name('loginCallback');
 
 Route::get('sso', 'Auth\SSOController@handleLogin')->name('sso');
+
+Route::get('user/{id}', 'UserController@show');

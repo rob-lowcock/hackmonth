@@ -90,3 +90,26 @@ h1, h2, h3, h4, h5, h6 {
         color: $text;
     }
 }
+
+.header {
+    border-bottom: 1px solid $primary;
+    position: relative;
+
+    .menu-button {
+        top: 1.5rem;
+        right: 1.625rem;
+        position: absolute;
+    }
+
+    h1 {
+        text-align: center;
+        color: #000;
+        font-size: 1.5rem;
+        padding: 1.25rem 0;
+        margin: 0;
+
+        span {
+            color: $primary;
+        }
+    }
+}
