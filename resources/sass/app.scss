@@ -1,6 +1,6 @@
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700|Roboto:400,700');
 
 // Variables
 @import 'variables';
@@ -110,6 +110,85 @@ h1, h2, h3, h4, h5, h6 {
 
         span {
             color: $primary;
+        }
+    }
+}
+
+.profile {
+    h2 {
+        font-weight: bold;
+        color: #000;
+    }
+
+    h2.day-number {
+        color: $primary;
+        font-weight: 700;
+        font-size: 4.5rem;
+        text-align: center;
+    }
+
+    @include media-breakpoint-down(xs) {
+        h2.day-number {
+            padding-top: 32px;
+            font-size: 3rem;
+        }
+    }
+
+    .title-row {
+        padding-top: 24px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    a.help {
+        width: 1rem;
+        height: 1rem;
+        display: inline-block;
+        vertical-align: 0.1rem;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .blog-row {
+        margin-top: 32px;
+        .icon-col {
+            text-align: right;
+            padding-right: 0;
+        }
+
+        h3 {
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            color: $text;
+            font-weight: normal;
+            font-size: 1.125rem;
+        }
+
+        p {
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+    }
+
+    .day-indicators {
+        margin: 0 60px;
+    }
+
+    .indicator {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 0.75rem;
+        background-color: $incomplete;
+
+        &.today {
+            border: 2px solid $primary;
+        }
+
+        &.complete {
+            background-color: $primary;
         }
     }
 }

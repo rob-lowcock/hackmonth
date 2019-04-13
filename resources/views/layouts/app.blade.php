@@ -13,11 +13,7 @@
         @component('header')
         @endcomponent
         <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <h1 class="day-number">Day 11</h1>
-                </div>
-            </div>
+            @yield('content')
         </div>
     </div>
 </body>

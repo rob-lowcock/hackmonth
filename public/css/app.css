@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:300,700|Roboto);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,700|Roboto:400,700);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
@@ -10768,5 +10768,83 @@ h6 {
 
 .header h1 span {
   color: #6C38C4;
+}
+
+.profile h2 {
+  font-weight: bold;
+  color: #000;
+}
+
+.profile h2.day-number {
+  color: #6C38C4;
+  font-weight: 700;
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+@media (max-width: 575.98px) {
+  .profile h2.day-number {
+    padding-top: 32px;
+    font-size: 3rem;
+  }
+}
+
+.profile .title-row {
+  padding-top: 24px;
+}
+
+.profile .title-row p {
+  margin-bottom: 0;
+}
+
+.profile a.help {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  vertical-align: 0.1rem;
+}
+
+.profile a.help:hover {
+  text-decoration: none;
+}
+
+.profile .blog-row {
+  margin-top: 32px;
+}
+
+.profile .blog-row .icon-col {
+  text-align: right;
+  padding-right: 0;
+}
+
+.profile .blog-row h3 {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  color: #545E75;
+  font-weight: normal;
+  font-size: 1.125rem;
+}
+
+.profile .blog-row p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.profile .day-indicators {
+  margin: 0 60px;
+}
+
+.profile .indicator {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: #D8D8D8;
+}
+
+.profile .indicator.today {
+  border: 2px solid #6C38C4;
+}
+
+.profile .indicator.complete {
+  background-color: #6C38C4;
 }
 
