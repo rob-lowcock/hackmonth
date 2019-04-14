@@ -174,7 +174,17 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .day-indicators {
-        margin: 0 60px;
+        margin: 48px auto;
+        width: 14rem;
+
+        .row {
+            margin-bottom: 16px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 0;
+        }
     }
 
     .indicator {
@@ -182,6 +192,8 @@ h1, h2, h3, h4, h5, h6 {
         height: 1.5rem;
         border-radius: 0.75rem;
         background-color: $incomplete;
+        margin: 0;
+        padding: 0;
 
         &.today {
             border: 2px solid $primary;
@@ -189,6 +201,15 @@ h1, h2, h3, h4, h5, h6 {
 
         &.complete {
             background-color: $primary;
+        }
+    }
+
+    .achievements {
+        h5 {
+            color: $primary;
+            font-size: 0.9rem;
+            font-weight: bold;
+            font-family: Roboto, Helvetica, Arial, sans-serif;
         }
     }
 }

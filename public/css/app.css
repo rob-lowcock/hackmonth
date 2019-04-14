@@ -10660,7 +10660,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #FEFEFE;
-  color: #545E75;
+  color: #6E6E6E;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
@@ -10697,7 +10697,7 @@ h6 {
 
 .billboard h2 {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #545E75;
+  color: #6E6E6E;
   font-size: 1rem;
   font-weight: 300;
 }
@@ -10712,7 +10712,7 @@ h6 {
 .billboard .card {
   border: none;
   background-color: #FEFEFE;
-  color: #545E75;
+  color: #6E6E6E;
   text-align: center;
 }
 
@@ -10744,7 +10744,7 @@ h6 {
   display: inline;
   margin-right: 8px;
   vertical-align: -3px;
-  color: #545E75;
+  color: #6E6E6E;
 }
 
 .header {
@@ -10819,7 +10819,7 @@ h6 {
 
 .profile .blog-row h3 {
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  color: #545E75;
+  color: #6E6E6E;
   font-weight: normal;
   font-size: 1.125rem;
 }
@@ -10830,7 +10830,17 @@ h6 {
 }
 
 .profile .day-indicators {
-  margin: 0 60px;
+  margin: 48px auto;
+  width: 14rem;
+}
+
+.profile .day-indicators .row {
+  margin-bottom: 16px;
+}
+
+.profile .day-indicators p {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .profile .indicator {
@@ -10838,6 +10848,8 @@ h6 {
   height: 1.5rem;
   border-radius: 0.75rem;
   background-color: #D8D8D8;
+  margin: 0;
+  padding: 0;
 }
 
 .profile .indicator.today {
@@ -10846,5 +10858,12 @@ h6 {
 
 .profile .indicator.complete {
   background-color: #6C38C4;
+}
+
+.profile .achievements h5 {
+  color: #6C38C4;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 

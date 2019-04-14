@@ -44,22 +44,52 @@
             <div class="col">
                 <div class="day-indicators">
                     <div class="row">
-                        <div class="col"><div class="indicator complete"></div></div>
-                        <div class="col"><div class="indicator complete"></div></div>
-                        <div class="col"><div class="indicator complete"></div></div>
-                        <div class="col"><div class="indicator today"></div></div>
-                        <div class="col"><div class="indicator incomplete"></div></div>
-                        <div class="col"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator complete"></div></div>
+                        <div class="col-2"><div class="indicator complete"></div></div>
+                        <div class="col-2"><div class="indicator complete"></div></div>
+                        <div class="col-2"><div class="indicator today"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
                     </div>
                     <div class="row">
-                        <div class="col"><div class="indicator incomplete"></div></div>
-                        <div class="col"><div class="indicator incomplete"></div></div>
-                        <div class="col"><div class="indicator incomplete"></div></div>
-                        <div class="col"><div class="indicator incomplete"></div></div>
-                        <div class="col"><div class="indicator incomplete"></div></div>
-                        <div class="col"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
                     </div>
+                    <div class="row">
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                    </div>
+                    <p>Committed code: 9 of 11 days</p>
                 </div>
+            </div>
+        </div>
+        <div class="row achievements">
+            <div class="col">
+                <h5>Your achievements</h5>
             </div>
         </div>
     </div>
