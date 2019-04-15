@@ -16,7 +16,7 @@
                 <h2 class="day-number text-sm-right">Day 11</h2>
             </div>
         </div>
-        <div class="row blog-row">
+        <div class="row blog-row-small d-flex d-sm-none">
             <div class="col-3 icon-col">
                 <svg width="47px" height="43px" viewBox="0 0 47 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
@@ -37,60 +37,175 @@
             </div>
             <div class="col">
                 <p>From the blog:</p>
-                <h3>Designing for Developers</h3>
+                <h3><a href="#">Designing for Developers</a></h3>
             </div>
         </div>
-        <div class="row">
+        <div class="row days">
             <div class="col">
                 <div class="day-indicators">
-                    <div class="row">
-                        <div class="col-2"><div class="indicator complete"></div></div>
-                        <div class="col-2"><div class="indicator complete"></div></div>
-                        <div class="col-2"><div class="indicator complete"></div></div>
-                        <div class="col-2"><div class="indicator today"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                    <div class="indicator complete"></div>
+                    <div class="indicator complete"></div>
+                    <div class="indicator complete"></div>
+                    <div class="indicator today"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                    <div class="indicator incomplete"></div>
+                </div>
+                <p>Committed code: 9 of 11 days</p>
+            </div>
+        </div>
+        <div class="row blog-row-large d-none d-sm-flex">
+            <div class="blog-container">
+                <div class="blog-illustration">
+                    <svg viewBox="0 0 240 195" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Tablet-Portrait" transform="translate(-62.000000, -413.000000)">
+                                <g id="37-art-design-bachelor-degree" transform="translate(63.000000, 413.000000)">
+                                    <g id="Background">
+                                        <path d="M229.793103,109.473684 C229.788918,64.7663028 202.611908,24.553599 161.14264,7.89441855 C119.673373,-8.7647619 72.2453891,1.47736061 41.3372231,33.7665233 C10.4290572,66.0556859 2.25192256,113.903154 20.6813793,154.631579 L220.054253,154.631579 C226.486442,140.447366 229.807212,125.04935 229.793103,109.473684 Z" id="Path" fill="#F8F4FF" fill-rule="nonzero"></path>
+                                        <path d="M12.3103448,154.631579 L225.689655,154.631579" id="Path" stroke="#6C38C4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M0,154.631579 L6.83908046,154.631579" id="Path" stroke="#6C38C4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M231.16092,154.631579 L238,154.631579" id="Path" stroke="#6C38C4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                    <g id="Scene" transform="translate(32.000000, 38.000000)">
+                                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="0.243611111" y="14.3922414" width="109.170833" height="71.9612069" rx="1"></rect>
+                                        <rect id="Rectangle" stroke="#6C38C4" stroke-linecap="round" stroke-linejoin="round" x="0.243611111" y="14.3922414" width="109.170833" height="71.9612069" rx="1"></rect>
+                                        <path d="M53.3788889,66.2043103 L68.3180556,46.247069 C68.8606185,45.5222589 69.7121174,45.0956897 70.6163889,45.0956897 C71.5206604,45.0956897 72.3721593,45.5222589 72.9147222,46.247069 L87.8538889,66.2043103 L53.3788889,66.2043103 Z" id="Path" stroke="#6C38C4" fill="#E6D7FF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M20.3540278,66.2043103 L42.4070833,37.5843103 C42.9496462,36.8595003 43.8011452,36.432931 44.7054167,36.432931 C45.6096882,36.432931 46.4611871,36.8595003 47.00375,37.5843103 L67.7434722,66.122069 L20.3540278,66.2043103 Z" id="Path" stroke="#6C38C4" fill="#E6D7FF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <ellipse id="Oval" stroke="#6C38C4" fill="#E6D7FF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" cx="82.1080556" cy="34.5413793" rx="5.74583333" ry="5.75689655"></ellipse>
+                                        <path d="M63.4477778,18.7236207 C65.6949361,18.5440757 67.4271817,16.6645809 67.4271817,14.4059483 C67.4271817,12.1473156 65.6949361,10.2678208 63.4477778,10.0882759 L46.2102778,10.0882759 C44.5887132,9.95871501 43.0318305,10.752156 42.1813963,12.1415325 C41.330962,13.530909 41.330962,15.2809876 42.1813963,16.6703641 C43.0318305,18.0597406 44.5887132,18.8531815 46.2102778,18.7236207 L63.4477778,18.7236207 Z" id="Path" stroke="#6C38C4" fill="#E6D7FF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M54.8290278,10.0882759 L54.8290278,0" id="Path" stroke="#6C38C4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M92.1769444,92.1103448 C95.3502806,92.1103448 97.9227778,89.5328944 97.9227778,86.3534483 C97.9227778,83.1740021 95.3502806,80.5965517 92.1769444,80.5965517 L17.4811111,80.5965517 C14.307775,80.5965517 11.7352778,83.1740021 11.7352778,86.3534483 C11.7352778,89.5328944 14.307775,92.1103448 17.4811111,92.1103448 L92.1769444,92.1103448 Z" id="Path" fill="#E6D7FF" fill-rule="nonzero"></path>
+                                        <path d="M92.1769444,92.1103448 C95.3502806,92.1103448 97.9227778,89.5328944 97.9227778,86.3534483 C97.9227778,83.1740021 95.3502806,80.5965517 92.1769444,80.5965517 L17.4811111,80.5965517 C14.307775,80.5965517 11.7352778,83.1740021 11.7352778,86.3534483 C11.7352778,89.5328944 14.307775,92.1103448 17.4811111,92.1103448 L92.1769444,92.1103448 Z" id="Path" stroke="#6C38C4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M33.5694444,92.1103448 L26.4008333,119.524138 C25.5923883,122.605173 27.4298863,125.759481 30.505,126.569483 C33.5801138,127.379484 36.7283603,125.538448 37.5368056,122.457414 L45.4715278,92.3022414 L33.5694444,92.1103448 Z" id="Path" stroke="#6C38C4" fill="#E6D7FF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M76.1980556,92.1103448 L83.3666667,119.524138 C84.1751117,122.605173 82.3376137,125.759481 79.2625,126.569483 C76.1873862,127.379484 73.0391397,125.538448 72.2306944,122.457414 L64.3233333,92.3022414 L76.1980556,92.1103448 Z" id="Path" stroke="#6C38C4" fill="#E6D7FF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <polygon id="Path" stroke="#6C38C4" fill="#E6D7FF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" points="66.5669444 100.74569 43.06375 100.74569 40.0540278 112.259483 69.6040278 112.259483"></polygon>
+                                        <path d="M167.939861,66.2043103 L119.100278,66.2043103 L116.583056,88.9303448 C116.45365,89.7298191 116.68371,90.5457076 117.211523,91.1591487 C117.739335,91.7725897 118.510871,92.1207899 119.319167,92.1103448 L167.638889,92.1103448 C168.447185,92.1207899 169.218721,91.7725897 169.746533,91.1591487 C170.274345,90.5457076 170.504405,89.7298191 170.375,88.9303448 L167.939861,66.2043103 Z" id="Path" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                        <path d="M167.939861,66.2043103 L119.100278,66.2043103 L116.583056,88.9303448 C116.45365,89.7298191 116.68371,90.5457076 117.211523,91.1591487 C117.739335,91.7725897 118.510871,92.1207899 119.319167,92.1103448 L167.638889,92.1103448 C168.447185,92.1207899 169.218721,91.7725897 169.746533,91.1591487 C170.274345,90.5457076 170.504405,89.7298191 170.375,88.9303448 L167.939861,66.2043103 Z" id="Path" stroke="#6C38C4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M190.923194,66.2043103 C192.509863,66.2043103 193.796111,64.9155852 193.796111,63.3258621 C193.796111,61.736139 192.509863,60.4474138 190.923194,60.4474138 L96.1169444,60.4474138 C94.5302764,60.4474138 93.2440278,61.736139 93.2440278,63.3258621 C93.2440278,64.9155852 94.5302764,66.2043103 96.1169444,66.2043103 L190.923194,66.2043103 Z" id="Path" stroke="#6C38C4" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M150.702361,59.0218966 C150.702361,56.6368966 147.47375,54.6905172 143.506389,54.6905172 C139.539028,54.6905172 136.337778,56.6368966 136.337778,59.0218966 L136.337778,60.4474138 L150.702361,60.4474138 L150.702361,59.0218966 Z" id="Path" stroke="#6C38C4" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <ellipse id="Oval" stroke="#6C38C4" fill="#E6D7FF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" cx="180.854306" cy="76.2925862" rx="4.29569444" ry="4.30396552"></ellipse>
+                                        <path d="M185.177361,84.9827586 C185.306673,83.3580718 184.514757,81.7981915 183.12805,80.9461198 C181.741344,80.0940481 179.994628,80.0940481 178.607922,80.9461198 C177.221215,81.7981915 176.429299,83.3580718 176.558611,84.9827586 L176.558611,95.0436207 L185.177361,100.800517 L185.177361,84.9827586 Z" id="Path" stroke="#6C38C4" fill="#E6D7FF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M180.854306,71.9612069 L180.854306,57.5689655" id="Path" stroke="#6C38C4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M116.583056,142.551724 C82.46375,142.551724 54.8290278,144.47069 54.8290278,146.85569 C54.8290278,147.705517 58.3038889,148.500517 64.24125,149.158448 C56.7990278,149.926034 51.9561111,151.187069 51.9561111,152.612586 C51.9561111,154.997586 65.4451389,156.943966 82.0533333,156.943966 C98.6615278,156.943966 112.150556,154.997586 112.150556,152.612586 C112.150556,152.119138 111.466528,151.62569 110.317361,151.159655 L116.44625,151.159655 C150.565556,151.159655 178.227639,149.213276 178.227639,146.828276 C178.227639,144.443276 150.702361,142.551724 116.583056,142.551724 Z" id="Path" fill="#F0F2FF" fill-rule="nonzero"></path>
+                                        <path d="M93.5997222,123.773276 C89.8049503,124.008057 86.8472617,127.160076 86.8472617,130.969397 C86.8472617,134.778717 89.8049503,137.930736 93.5997222,138.165517 L149.635278,138.165517 C151.221946,138.165517 152.508194,139.454242 152.508194,141.043966 C152.508194,142.633689 151.221946,143.922414 149.635278,143.922414 L93.5997222,143.922414 C86.6907879,143.603876 81.2528242,137.898959 81.2528242,130.969397 C81.2528242,124.039834 86.6907879,118.334917 93.5997222,118.016379 L149.635278,118.016379 C151.221946,118.016379 152.508194,119.305105 152.508194,120.894828 C152.508194,122.484551 151.221946,123.773276 149.635278,123.773276 L93.5997222,123.773276 Z" id="Path" stroke="#6C38C4" fill="#E6D7FF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M149.635278,138.165517 L149.635278,123.773276 L93.5997222,123.773276 C89.8049503,124.008057 86.8472617,127.160076 86.8472617,130.969397 C86.8472617,134.778717 89.8049503,137.930736 93.5997222,138.165517 L149.635278,138.165517 Z" id="Path" stroke="#6C38C4" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M149.635278,129.530172 L129.524861,129.530172" id="Path" stroke="#6C38C4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M123.779028,129.530172 L118.033194,129.530172" id="Path" stroke="#6C38C4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M109.414444,97.8672414 C106.742663,97.7019393 104.200121,99.0362158 102.814315,101.33086 C101.428509,103.625505 101.428509,106.501219 102.814315,108.795864 C104.200121,111.090508 106.742663,112.424785 109.414444,112.259483 L159.676806,112.259483 C161.263474,112.259483 162.549722,113.548208 162.549722,115.137931 C162.549722,116.727654 161.263474,118.016379 159.676806,118.016379 L109.414444,118.016379 C104.653783,118.23587 100.157933,115.816167 97.7121034,111.718082 C95.2662739,107.619998 95.2662739,102.506727 97.7121034,98.408642 C100.157933,94.3105575 104.653783,91.8908538 109.414444,92.1103448 L159.676806,92.1103448 C161.263474,92.1103448 162.549722,93.39907 162.549722,94.9887931 C162.549722,96.5785162 161.263474,97.8672414 159.676806,97.8672414 L109.414444,97.8672414 Z" id="Path" stroke="#6C38C4" fill="#E6D7FF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M159.676806,112.396552 L159.676806,97.8672414 L109.414444,97.8672414 C106.742663,97.7019393 104.200121,99.0362158 102.814315,101.33086 C101.428509,103.625505 101.428509,106.501219 102.814315,108.795864 C104.200121,111.090508 106.742663,112.424785 109.414444,112.259483 L159.676806,112.396552 Z" id="Path" stroke="#6C38C4" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M159.676806,103.624138 L139.566389,103.624138" id="Path" stroke="#6C38C4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M133.820556,103.624138 L128.074722,103.624138" id="Path" stroke="#6C38C4" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        <path d="M66.4027778,115.137931 L100.877778,115.137931 L100.877778,147.075 C100.877778,150.103044 98.4277804,152.557759 95.4055556,152.557759 L71.875,152.557759 C68.8527751,152.557759 66.4027778,150.103044 66.4027778,147.075 L66.4027778,115.137931 Z" id="Path" stroke="#6C38C4" fill="#FFFFFF" fill-rule="nonzero" stroke-linejoin="round"></path>
+                                        <path d="M88.7294444,115.137931 L101.397639,86.5453448 C102.051346,85.1624796 103.635133,84.4893539 105.081841,84.979521 C106.52855,85.469688 107.379529,86.96775 107.061389,88.4643103 L100.795694,115.137931 L88.7294444,115.137931 Z" id="Path" stroke="#6C38C4" fill="#FFFFFF" fill-rule="nonzero" stroke-linejoin="round"></path>
+                                        <path d="M77.8397222,115.137931 C75.9357205,115.137931 74.3922222,116.684401 74.3922222,118.592069 C74.3922222,120.499737 75.9357205,122.046207 77.8397222,122.046207 L80.0833333,122.046207 C80.1284201,125.835708 83.2233288,128.875294 87.0056944,128.844828 L90.4531944,128.844828 L90.4531944,134.026034 C90.4531944,136.887536 92.7684419,139.207241 95.6244444,139.207241 C98.480447,139.207241 100.795694,136.887536 100.795694,134.026034 L100.795694,115.137931 L77.8397222,115.137931 Z" id="Path" stroke="#6C38C4" fill="#E6D7FF" fill-rule="nonzero" stroke-linejoin="round"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="blog-details">
+                    <p>From the blog:</p>
+                    <h3><a href="#">Designing for Developers</a></h3>
+                </div>
+            </div>
+
+        </div>
+        <div class="row achievements">
+            <div>
+                <h5>Your achievements</h5>
+            </div>
+            <div class="row">
+                <div class="achievement col-4">
+                    <svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                            <g id="Mobile-Portrait" transform="translate(-15.000000, -729.000000)" stroke="#6C38C4">
+                                <g id="water-fountain-sink" transform="translate(16.000000, 730.000000)">
+                                    <path d="M16.516129,17.5483871 L16.516129,3.65591398 C16.516129,1.63680844 17.9026021,3.2471039e-16 19.6129032,0 C21.3232044,-3.2471039e-16 22.7096774,1.63680844 22.7096774,3.65591398 L22.7096774,6.58064516" id="Path"></path>
+                                    <path d="M0.696265641,17.5483872 C0.507301078,17.5482716 0.326413385,17.6207163 0.195178346,17.7490705 C0.0639433064,17.8774247 -0.00635118089,18.0506482 0.000451584529,18.2289268 C0.369233034,25.8948505 7.64605644,32 16.011133,32 C24.3455938,32 31.6224172,25.8948505 31.9995484,18.2289268 C32.0063512,18.0506482 31.9360567,17.8774247 31.8048217,17.7490705 C31.6735866,17.6207163 31.4926989,17.5482716 31.3037344,17.5483872 L0.696265641,17.5483872 Z" id="Path"></path>
+                                    <path d="M24.7741935,12.3712085 C24.7741935,13.5201841 23.8498782,14.4516129 22.7096774,14.4516129 C21.5694766,14.4516129 20.6451613,13.5201841 20.6451613,12.3712085 C20.9110085,11.3171182 21.4359293,10.3474367 22.1715269,9.55156699 C22.3020993,9.38648274 22.5001845,9.29032258 22.7096774,9.29032258 C22.9191704,9.29032258 23.1172555,9.38648274 23.247828,9.55156699 C23.9842016,10.3468727 24.5092371,11.316766 24.7741935,12.3712085 Z" id="Path"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="achievement-details">
+                        <p class="achievemnt-title">Kitchen sink</p>
+                        <p class="achievement-description">Use more than one language</p>
                     </div>
-                    <div class="row">
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                </div>
+                <div class="achievement col-4">
+                    <svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                            <g id="Mobile-Portrait" transform="translate(-16.000000, -794.000000)" stroke="#6C38C4">
+                                <g id="gaming-trophy-5" transform="translate(16.000000, 794.000000)">
+                                    <path d="M18.676,4.66666667 L13.3426667,4.66666667 L13.3426667,7.33333333 C13.3426667,8.069713 13.9396203,8.66666667 14.676,8.66666667 L16.676,8.66666667 C17.7805695,8.66666667 18.676,9.56209717 18.676,10.6666667 C18.676,11.7712362 17.7805695,12.6666667 16.676,12.6666667 L13.3426667,12.6666667" id="Path"></path>
+                                    <path d="M4.15066667,18.3373333 C2.05634537,17.5630917 0.66601379,15.5661861 0.666666667,13.3333333 L0.666666667,10 C0.666666667,9.26362033 1.26362033,8.66666667 2,8.66666667 L4.73466667,8.66666667" id="Path"></path>
+                                    <path d="M27.8493333,18.3373333 C29.9436546,17.5630917 31.3339862,15.5661861 31.3333333,13.3333333 L31.3333333,10 C31.3333333,9.26362033 30.7363797,8.66666667 30,8.66666667 L27.2653333,8.66666667" id="Path"></path>
+                                    <path d="M27.976,2.03333333 C27.9849869,1.67397181 27.8484885,1.32620638 27.5974593,1.06890147 C27.3464302,0.811596556 27.0021405,0.666554313 26.6426667,0.666666667 L5.35733333,0.666666667 C4.99785948,0.666554313 4.65356985,0.811596556 4.40254067,1.06890147 C4.15151149,1.32620638 4.01501314,1.67397181 4.024,2.03333333 C4.48666667,20.9853333 14.628,15.5706667 14.628,22.6666667 C14.5546667,26.776 12.8506667,28.3 9.93066667,28.6066667 C9.21703602,28.6810791 8.67489365,29.2825003 8.67466667,30 C8.67466667,30.7363797 9.27162033,31.3333333 10.008,31.3333333 L21.992,31.3333333 C22.7283797,31.3333333 23.3253333,30.7363797 23.3253333,30 C23.3251063,29.2825003 22.782964,28.6810791 22.0693333,28.6066667 C19.1493333,28.3 17.4453333,26.776 17.372,22.6666667 C17.372,15.5706667 27.5133333,20.9853333 27.976,2.03333333 Z" id="Path"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="achievement-details">
+                        <p class="achievemnt-title">5-day streak</p>
+                        <p class="achievement-description">Commit code 5 days in a row</p>
                     </div>
-                    <div class="row">
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
+                </div>
+                <div class="achievement col-4">
+                    <svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                            <g id="Mobile-Portrait" transform="translate(-15.000000, -857.000000)" stroke="#6C38C4">
+                                <g id="aircraft-propeller-1" transform="translate(16.000000, 858.000000)">
+                                    <path d="M30.6666667,10.6666667 L28.0000001,10.6666667" id="Path"></path>
+                                    <path d="M9.35600008,13.5813333 C6.5445578,12.8995005 3.81693987,11.9095094 1.22266674,10.6293333 C0.474460937,10.261493 0.000331557651,9.50040422 7.8211282e-08,8.66666667 L7.8211282e-08,3.47733333 C-0.000257037948,2.5205721 0.633451383,1.67943388 1.55316634,1.415774 C2.47288129,1.15211413 3.45598319,1.52975222 3.96266674,2.34133333 L5.96266674,5.54133333 C6.40228288,6.24267234 7.17227003,6.66797938 8.00000008,6.66666667 L10.0000001,6.66666667 C10.5730272,7.57104435 11.5993483,8.08420488 12.6666667,8 C13.7339852,8.08420488 14.7603063,7.57104435 15.3333334,6.66666667 L25.3333334,6.66666667 C26.8060927,6.66666667 28.0000001,7.860574 28.0000001,9.33333333 L28.0000001,12 C28.0000001,13.4727593 26.8060927,14.6666667 25.3333334,14.6666667 L18.5093334,14.6666667" id="Path"></path>
+                                    <path d="M30.6666667,8 L30.6666667,4" id="Path"></path>
+                                    <path d="M30.6666667,17.3333333 L30.6666667,13.3333333" id="Path"></path>
+                                    <path d="M25.3333334,6.66666667 L25.3333334,14.6666667" id="Path"></path>
+                                    <path d="M9.33333341,13.3333333 C9.33333341,14.069713 9.93028708,14.6666667 10.6666667,14.6666667 L18.6666667,14.6666667 C19.4030464,14.6666667 20.0000001,14.069713 20.0000001,13.3333333 C20.0000001,12.5969537 19.4030464,12 18.6666667,12 L10.6666667,12 C9.93028708,12 9.33333341,12.5969537 9.33333341,13.3333333 Z" id="Path"></path>
+                                    <path d="M13.3333334,1.33333333 C13.3333334,2.069713 13.9302871,2.66666667 14.6666667,2.66666667 L22.6666667,2.66666667 C23.4030464,2.66666667 24.0000001,2.069713 24.0000001,1.33333333 C24.0000001,0.596953667 23.4030464,1.51656465e-13 22.6666667,1.51656465e-13 L14.6666667,1.51656465e-13 C13.9302871,1.5158245e-13 13.3333334,0.596953667 13.3333334,1.33333333 Z" id="Path"></path>
+                                    <path d="M20.0000001,2.66666667 L16.0000001,12" id="Path"></path>
+                                    <path d="M10.0000001,6.66666667 L9.33333341,4" id="Path"></path>
+                                    <path d="M22.6666667,19.3333333 L22.6666667,14.6666667" id="Path"></path>
+                                    <circle id="Oval" cx="22.6666667" cy="19.3333333" r="2"></circle>
+                                    <path d="M4.59066674,12.1013333 L2.66666674,15.3333333" id="Path"></path>
+                                    <circle id="Oval" cx="2.66666674" cy="15.3333333" r="1.33333333"></circle>
+                                    <path d="M4.00000008,28.3333333 C4.00000008,25.9400994 5.9400995,24 8.33333341,24 C10.7265673,24 12.6666667,25.9400994 12.6666667,28.3333333" id="Path"></path>
+                                    <path d="M4.00000008,28 C2.52724075,28 1.33333341,29.1939073 1.33333341,30.6666667 L17.3333334,30.6666667 C17.3333334,28.4575277 15.5424724,26.6666667 13.3333334,26.6666667 C13.0098271,26.6753795 12.6870808,26.7025347 12.3666667,26.748" id="Path"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <div class="achievement-details">
+                        <p class="achievemnt-title">Winging it</p>
+                        <p class="achievement-description">Start a project without a plan</p>
                     </div>
-                    <div class="row">
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                        <div class="col-2"><div class="indicator incomplete"></div></div>
-                    </div>
-                    <p>Committed code: 9 of 11 days</p>
                 </div>
             </div>
         </div>
-        <div class="row achievements">
-            <div class="col">
-                <h5>Your achievements</h5>
-            </div>
         </div>
     </div>
 @endsection
