@@ -15,4 +15,13 @@ class UserController extends Controller
     public function show(string $username) {
         return view('user.profile');
     }
+
+    /**
+     * Show the profile edit page
+     *
+     * @return View
+     */
+    public function edit() {
+        return view('user.edit');
+    }
 }

@@ -10752,16 +10752,71 @@ h6 {
   position: relative;
 }
 
+.header .container {
+  position: relative;
+}
+
 .header .menu-button {
   top: 1.5rem;
   right: 1.625rem;
+  padding: 1.5rem 1.625rem;
   position: absolute;
+  width: 1.25rem;
+  height: 0.75rem;
+}
+
+.header .menu-button a {
+  display: block;
+  width: 1.25rem;
+  height: 0.75rem;
+  padding: 1.5rem 1.625rem;
+}
+
+.header .menu-button a:hover {
+  background-color: #6C38C4;
+}
+
+.header .menu-button a:hover svg {
+  fill: #fff;
+}
+
+.header .menu-button svg {
+  width: 1.25rem;
+  height: 0.75rem;
+}
+
+.header .menu-button-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header .menu-button-list ul {
+  list-style-type: none;
+}
+
+.header .menu-button-list ul li {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 1.75rem;
+}
+
+.header .menu-button-list ul li a {
+  display: block;
+  padding: 1.25rem 16px;
+}
+
+.header .menu-button-list ul li a:hover {
+  background-color: #6C38C4;
+  color: #fff;
+  text-decoration: none;
 }
 
 .header h1 {
   text-align: center;
   color: #000;
   font-size: 1.5rem;
+  line-height: 1.75rem;
   padding: 1.25rem 0;
   margin: 0;
 }
@@ -10854,7 +10909,7 @@ h6 {
 
 .profile .blog-row-large .blog-details {
   margin: 64px 0 0 32px;
-  width: 416px;
+  max-width: 416px;
 }
 
 @media (max-width: 767.98px) {
