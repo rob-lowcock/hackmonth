@@ -20,7 +20,7 @@ Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback
 
 Route::get('sso', 'Auth\SSOController@handleLogin')->name('sso');
 
+Route::get('user/edit', 'UserController@edit');
 Route::resource('user', 'UserController')->only([
     'show'
 ]);
-Route::get('user/edit', 'UserController@edit');

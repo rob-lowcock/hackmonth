@@ -4,7 +4,7 @@
             <a href="#">
                 <svg viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                        <g id="Mobile-Portrait" transform="translate(-275.000000, -32.000000)" stroke="#000000">
+                        <g id="Mobile-Portrait" transform="translate(-275.000000, -32.000000)" stroke="#000">
                             <g id="navigation-menu" transform="translate(276.000000, 32.000000)">
                                 <path d="M18,1 L0,1" id="Path"></path>
                                 <path d="M18,6 L0,6" id="Path"></path>
