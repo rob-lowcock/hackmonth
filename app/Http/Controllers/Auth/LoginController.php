@@ -3,10 +3,11 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Session;
 use Laravel\Socialite\Facades\Socialite;
 
 class LoginController extends Controller
@@ -34,10 +35,21 @@ class LoginController extends Controller
      */
     public function handleProviderCallback(Request $request)
     {
-        $user = Socialite::driver('github')->user();
+        $userSocial = Socialite::driver('github')->stateless()->user();
 
-        Session::put('user', $user);
-        Log::debug($request->getQueryString());
+        $user = User::where(['email' => $userSocial->getEmail()])->first();
+
+        if (!$user) {
+            $user = User::create([
+                'name' => $userSocial->getName(),
+                'email' => $userSocial->getEmail(),
+                'image' => $userSocial->getAvatar(),
+                'provider_id' => $userSocial->getId(),
+                'provider' => 'github',
+            ]);
+        }
+
+        Auth::login($user);
 
         $redirect = $request->input('redirect');
         if ($redirect) {
@@ -46,6 +58,5 @@ class LoginController extends Controller
         }
 
         dd($user);
-        // $user->token;
     }
 }
