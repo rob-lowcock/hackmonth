@@ -13,12 +13,9 @@
         <div class="form-group">
             <label for="repo">Repository</label>
             <select name="repo" class="form-control" id="repo">
-                <optgroup label="-- Please select --">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </optgroup>
-
+                <option disabled selected hidden>Select a repo to track</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
             </select>
         </div>
     </form>
