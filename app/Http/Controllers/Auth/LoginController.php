@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\User;
+use GrahamCampbell\GitHub\Facades\GitHub;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
@@ -49,14 +50,14 @@ class LoginController extends Controller
             ]);
         }
 
-        Auth::login($user);
-
+        Auth::login($user, true);
+        $request->session()->put('github_token', $userSocial->token);
         $redirect = $request->input('redirect');
         if ($redirect) {
             Log::debug('Redirect URL detected. Redirecting user back to: ' . $redirect);
             return redirect($redirect);
         }
 
-        dd($user);
+        return redirect()->route('home');
     }
 }

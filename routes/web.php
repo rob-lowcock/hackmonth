@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('login/github', 'Auth\LoginController@redirectToProvider')->name('login');
 Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback')->name('loginCallback');
