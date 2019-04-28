@@ -21,7 +21,8 @@ jobs:
     steps:
       - checkout
 
-      - run: sudo apt update # PHP CircleCI 2.0 Configuration File# PHP CircleCI 2.0 Configuration File sudo apt install zlib1g-dev libsqlite3-dev
+      - run: sudo apt update # PHP CircleCI 2.0 Configuration File# PHP CircleCI 2.0 Configuration File
+      - run: sudo apt install zlib1g-dev libsqlite3-dev
       - run: sudo docker-php-ext-install zip
       - run: sudo docker-php-ext-install bcmath && sudo docker-php-ext-enable bcmath
       - run: sudo docker-php-ext-install pdo_sqlite && sudo docker-php-ext-enable pdo_sqlite
@@ -52,6 +53,7 @@ jobs:
 
       # prepare the database
       - run: touch database/testing.sqlite
+      - run: touch database/database.sqlite
       - run: php artisan migrate --env=testing --database=sqlite_testing --force
 
       # run tests with phpunit or codecept
