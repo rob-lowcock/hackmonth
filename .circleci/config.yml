@@ -2,7 +2,7 @@
 #
 # Check https://circleci.com/docs/2.0/language-php/ for more details
 #
-version: 2
+version: 2.1
 jobs:
   build:
     docker:
@@ -60,3 +60,32 @@ jobs:
       #- run: ./vendor/bin/phpunit
       #- run: ./vendor/bin/codecept build
       - run: ./vendor/bin/phpunit
+  deploy:
+    docker:
+      # Specify the version you desire here
+      - image: circleci/php:7.3-stretch-node-browsers
+    steps:
+      - checkout
+      - run: sudo apt update
+      - run: sudo apt install lftp
+      - run:
+          name: Send via SFTP
+          command: lftp sftp://root@hackmonth.org -e "mirror -v -R --exclude .git/ --exclude .circleci/ ./ /www/hackmonth-test; quit"
+
+workflows:
+  version: 2
+  build-n-deploy:
+    jobs:
+      - build:
+          filters:
+            tags:
+              only: /.*/
+      - deploy:
+          requires:
+            - build
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+
