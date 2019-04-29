@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use GrahamCampbell\GitHub\Facades\GitHub;
+use Github\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\View\View;
@@ -26,7 +26,13 @@ class UserController extends Controller
      * @return View
      */
     public function edit(Request $request) {
-        dd(Auth::user());
+        $user = Auth::user();
+
+        $client = new Client();
+        $client->authenticate($user->github_token, null, Client::AUTH_URL_TOKEN);
+        $repos = $client->currentUser()->repositories();
+
+        dd($repos);
         return view('user.edit');
     }
 }

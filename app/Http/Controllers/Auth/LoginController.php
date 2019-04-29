@@ -46,11 +46,14 @@ class LoginController extends Controller
                 'image' => $userSocial->getAvatar(),
                 'provider_id' => $userSocial->getId(),
                 'provider' => 'github',
+                'github_token' => $userSocial->token,
             ]);
+        } else {
+            $user->github_token = $userSocial->token;
+            $user->save();
         }
 
         Auth::login($user, true);
-        $request->session()->put('github_token', $userSocial->token);
         $redirect = $request->input('redirect');
         if ($redirect) {
             Log::debug('Redirect URL detected. Redirecting user back to: ' . $redirect);
