@@ -23,6 +23,7 @@ class LoginController extends Controller
         Log::debug('Redirecting to github');
         Log::debug('Post-GitHub redirect URL set to: ' . $request->input('redirect'));
         return Socialite::driver('github')
+            ->scopes(['repo', 'write:repo_hook', 'read:user', 'user:email'])
             ->with(['redirect_uri' => env('GITHUB_CALLBACK_URL') . '?redirect=' . $request->input('redirect')])
             ->redirect();
     }

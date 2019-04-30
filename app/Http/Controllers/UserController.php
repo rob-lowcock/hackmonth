@@ -32,7 +32,6 @@ class UserController extends Controller
         $client->authenticate($user->github_token, null, Client::AUTH_URL_TOKEN);
         $repos = $client->currentUser()->repositories();
 
-        dd($repos);
-        return view('user.edit');
+        return view('user.edit', ['repos' => $repos]);
     }
 }
