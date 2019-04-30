@@ -14,8 +14,9 @@
             <label for="repo">Repository</label>
             <select name="repo" class="form-control" id="repo">
                 <option disabled selected hidden>Select a repo to track</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
+                @foreach($repos as $repo)
+                    <option value="{{ $repo['full_name'] }}">{{ $repo['full_name'] }}</option>
+                @endforeach
             </select>
         </div>
     </form>
