@@ -7,7 +7,7 @@
         @csrf
         <div class="form-group">
             <label for="title">Project Title</label>
-            <input type="text" name="title" id="title" class="form-control">
+            <input type="text" name="title" id="title" value="{{ $project }}" class="form-control">
         </div>
 
         <div class="form-group">

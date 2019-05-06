@@ -32,6 +32,8 @@ class UserController extends Controller
         $client->authenticate($user->github_token, null, Client::AUTH_URL_TOKEN);
         $repos = $client->currentUser()->repositories();
 
-        return view('user.edit', ['repos' => $repos]);
+        $project = $user->projects()->orderBy('created_at', 'desc')->first();
+
+        return view('user.edit', ['repos' => $repos, 'project' => $project]);
     }
 }
