@@ -20,10 +20,16 @@ $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
 $primary: #6C38C4;
+$secondary: #BD10E0;
 $info: #C9F0FF;
 $success: #59C3C3;
 $error: #F45B69;
 $background: #FEFEFE;
 $background-shadow: #EBEBEB;
-$text: #6E6E6E;
-$incomplete: #D8D8D8
+$text: #222222;
+$incomplete: #D8D8D8;
+
+@mixin background-gradient() {
+    background-color: $primary;
+    background-image: linear-gradient(to bottom right, $secondary, $primary);
+}

@@ -11,345 +11,122 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: $background;
+    background-color: #FFFFFF;
     color: $text;
     font-family: "Roboto", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat", Helvetica, Arial, sans-serif;
     color: $primary;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: normal;
 }
 
-.billboard {
-    padding: 20px 0;
-
-    h1, h2 {
-        color: black;
-
-        span {
-            color: $primary;
-        }
-
-        strong {
-            font-size: 1.4rem;
-            vertical-align: 10px;
-            font-weight: 700;
-        }
-    }
-
-    h2 {
-        font-family: "Roboto", Helvetica, Arial, sans-serif;
-        color: $text;
-        font-size: 1.0rem;
-        font-weight: 300;
-    }
-
-    .logo {
-        width: 84px;
-        height: 84px;
-        display: block;
-        margin-right: 20px;
-    }
-
-    .card {
-        border: none;
-        background-color: $background;
-        color: $text;
-        text-align: center;
-    }
+@keyframes expand-width {
+    from {width: 0;}
+    to {width: 100%;}
 }
 
-.how-it-works {
-    padding-top: 20px;
-
-    ul {
-        list-style-type: none;
-        margin: 0;
-        font-size: 1.4em;
-        padding: 0;
-        
-        li img {
-            vertical-align: -3px;
-            padding-right: 5px;
-        }
-    }
-}
-
-.footer-call-to-action {
-    background-color: #EBEBEB;
-    border-radius: 4px;
-    padding: 20px;
-    margin-top: 20px;
-    text-align: center;
-
-    h4 {
-        display: inline;
-        margin-right: 8px;
-        vertical-align: -3px;
-        color: $text;
-    }
-}
-
-.header {
-    border-bottom: 1px solid $primary;
-    position: relative;
-
-    .container {
-        position: relative;
+.welcome {
+    header {
+        padding: 48px 0;
     }
 
-    .menu-button {
-        top: 0;
-        display: block;
-        right: 0;
-        position: absolute;
-
-        a {
-            position: relative;
-            display: inline-block;
-            padding: 1.4rem 1.625rem;
-
-            &:hover {
-                background-color: $primary;
-
-                #Mobile-Portrait {
-                    stroke: #fff;
-                }
-            }
-        }
-
-        svg {
-            width: 1.25rem;
-            height: 0.75rem;
-        }
-    }
-
-    .menu-button-list {
-        position: absolute;
-        top: 0;
-        right: 0;
-
+    nav {
         ul {
             list-style-type: none;
+            margin: 48px 0 0 0;
+            padding: 0;
+            text-align: right;
+            font-family: "Montserrat", Helvetica, Arial, sans-serif;
+            font-size: 2rem;
 
-            li {
+            .hover-underline {
+                height: 8px;
+                width: 0;
+                right: 0;
+                position: absolute;
+                @include background-gradient();
+            }
+
+            a {
                 display: inline-block;
-                font-size: 1rem;
-                line-height: 1.75rem;
+                position: relative;
+                line-height: 2.5rem;
+                margin-bottom: 16px;
 
-                a {
-                    display: block;
-                    padding: 1.25rem 16px;
+                &:hover {
+                    text-decoration: none;
 
-                    &:hover {
-                        background-color: $primary;
-                        color: #fff;
-                        text-decoration: none;
+                    .hover-underline {
+                        width: 100%;
+                        animation: expand-width 0.3s ease-out;
                     }
                 }
             }
         }
-
     }
 
-    h1 {
-        text-align: center;
-        color: #000;
-        font-size: 1.5rem;
-        line-height: 1.75rem;
-        padding: 1.25rem 0;
-        margin: 0;
+    .billboard {
+        @include background-gradient();
+        overflow: hidden;
 
-        span {
+        h1 {
+            color: #FFFFFF;
+            font-size: 3.25rem;
+            padding: 48px 0;
+        }
+
+        .signup {
+            display: inline-block;
+            padding-bottom: 48px;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #FFFFFF;
+            background-image: none;
             color: $primary;
-        }
-    }
-}
+            font-size: 2rem;
+            font-family: "Montserrat", Helvetica, Arial, sans-serif;
+            text-align: center;
+            line-height: 4rem;
+            padding: 0 2rem;
 
-.profile {
-    h2 {
-        font-weight: bold;
-        color: #000;
-    }
+            svg {
+                vertical-align: -0.6rem;
+                margin-left: 1rem;
+            }
 
-    h2.day-number {
-        color: $primary;
-        font-weight: 700;
-        font-size: 4.5rem;
-        text-align: center;
-    }
-
-    @include media-breakpoint-down(xs) {
-        h2.day-number {
-            padding-top: 32px;
-            font-size: 3rem;
-        }
-    }
-
-    .title-row {
-        padding-top: 24px;
-
-        p {
-            margin-bottom: 0;
-        }
-    }
-
-    a.help {
-        width: 1rem;
-        height: 1rem;
-        display: inline-block;
-        vertical-align: 0.1rem;
-
-        &:hover {
-            text-decoration: none;
-        }
-    }
-
-    .blog-row-small {
-        margin-top: 32px;
-        .icon-col {
-            text-align: right;
-            padding-right: 0;
-        }
-
-        h3 {
-            font-family: Roboto, Helvetica, Arial, sans-serif;
-            text-decoration: none;
-            font-weight: normal;
-            font-size: 1.125rem;
-
-            a {
-                color: $text !important;
-
-                &:hover {
-                    text-decoration: underline;
-                }
+            &:hover {
+                text-decoration: none;
             }
         }
 
-        p {
-            margin-bottom: 0;
-            font-weight: bold;
-        }
-    }
-
-    .blog-row-large {
-        .blog-container {
-            display: flex;
-            margin: 0 auto 48px;
-        }
-
-        .blog-illustration {
-            width: 240px;
-            @include media-breakpoint-down(sm) {
-                width: 160px;
-            }
-
-        }
-
-        .blog-details {
-            margin: 64px 0 0 32px;
-            max-width: 416px;
-
-            @include media-breakpoint-down(sm) {
-                margin: 32px 0 0 32px;
-                width: 320px;
-            }
-
-            p {
-                margin-bottom: 0;
-                font-weight: bold;
-            }
-
-            h3 a {
-                color: $text;
-                font-family: Roboto, Helvetica, Arial, sans-serif;
-                font-weight: normal;
-            }
-        }
-    }
-
-    .day-indicators {
-        margin: 0 auto 5px auto;
-        display: flex;
-        flex-wrap: wrap;
-
-        @include media-breakpoint-down(xs) {
-            width: 15rem;
-        }
-
-        @include media-breakpoint-only(sm) {
-            width: 25rem;
-        }
-
-        width: 37.5rem;
-    }
-
-    .days {
-        margin: 48px 0;
-
-        p {
+        p.signup-explanation {
+            color: #FFFFFF;
+            font-family: "Montserrat", Helvetica, Arial, sans-serif;
             text-align: center;
             margin-bottom: 0;
         }
-    }
-
-    .indicator {
-        width: 1.5rem;
-        height: 1.5rem;
-        border-radius: 0.75rem;
-        background-color: $incomplete;
-        margin: 8px;
-        padding: 0;
-
-        &.today {
-            border: 2px solid $primary;
-        }
-
-        &.complete {
-            background-color: $primary;
+        
+        .illustration svg {
+            position: absolute;
+            top: 48px;
         }
     }
 
-    .achievements {
-        display: block;
-        margin: 0 16px;
+    .prompt {
+        text-align: center;
+        padding: 48px 0;
+    }
 
-        h5 {
-            color: $primary;
-            font-size: 0.9rem;
-            font-weight: bold;
-            font-family: Roboto, Helvetica, Arial, sans-serif;
-            margin-bottom: 32px;
-            width: 100%;
-        }
-
-        .achievement {
-            min-width: 240px;
-            padding-bottom: 32px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        svg {
-            display: block;
-            width: 32px;
-            height: 32px;
-        }
-
-        .achievement-details {
-            margin-left: 16px;
-            width: 150px;
-        }
-
-        p {
-            margin-bottom: 0;
-            line-height: 1rem;
-        }
-
-        p.achievemnt-title {
-            font-weight: bold;
-        }
+    .or {
+        text-transform: uppercase;
+        font-family: "Montserrat", Helvetica, Arial, sans-serif;
+        color: $primary;
+        text-align: center;
+        margin-top: 96px;
+        font-size: 1.5rem;
     }
 }
