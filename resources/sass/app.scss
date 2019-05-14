@@ -126,7 +126,66 @@ h1, h2, h3, h4, h5, h6 {
         font-family: "Montserrat", Helvetica, Arial, sans-serif;
         color: $primary;
         text-align: center;
-        margin-top: 96px;
+        margin: 96px 0;
         font-size: 1.5rem;
+    }
+}
+
+.app {
+    header {
+        margin-top: 24px;
+
+        h1.day {
+            text-transform: uppercase;
+            font-size: 5.625rem;
+            line-height: 4.5rem;
+            color: transparent;
+            @include background-gradient();
+            font-weight: bold;
+            //noinspection CssInvalidPropertyValue
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+
+            li {
+                display: inline-block;
+
+                a {
+                    color: $primary;
+                    display: inline-block;
+                    margin: 24px 0 0 32px;
+                    position: relative;
+                    font-size: 1.125rem;
+                    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+
+                    .hover-underline {
+                        height: 8px;
+                        width: 0;
+                        right: 0;
+                        position: absolute;
+                        @include background-gradient();
+                    }
+
+                    &.active .hover-underline {
+                        width: 100%;
+                    }
+
+                    &:hover {
+                        text-decoration: none;
+
+                        .hover-underline {
+                            width: 100%;
+                            animation: expand-width 0.3s ease-out;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
