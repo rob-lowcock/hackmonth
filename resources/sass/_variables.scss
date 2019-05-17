@@ -28,8 +28,9 @@ $background: #FEFEFE;
 $background-shadow: #EBEBEB;
 $text: #222222;
 $incomplete: #D8D8D8;
+$muted: #9B9B9B;
 
 @mixin background-gradient() {
     background-color: $primary;
-    background-image: linear-gradient(to bottom right, $secondary, $primary);
+    background-image: linear-gradient(to right, $secondary, $primary);
 }

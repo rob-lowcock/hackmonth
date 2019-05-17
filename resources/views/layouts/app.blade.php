@@ -12,9 +12,9 @@
     <div class="app">
         @component('header')
         @endcomponent
-        <div class="container">
-            @yield('content')
-        </div>
+
+        @yield('content')
+
     </div>
 </body>
 </html>

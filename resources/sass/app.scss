@@ -188,4 +188,96 @@ h1, h2, h3, h4, h5, h6 {
             }
         }
     }
+
+    .name-container {
+        position: relative;
+        margin-top: 40px;
+        min-height: 180px;
+    }
+
+    .avatar {
+        width: 220px;
+        height: 220px;
+        border-radius: 110px;
+        position: absolute;
+        top: -40px;
+        z-index: 1000;
+    }
+
+    .name {
+        @include background-gradient();
+        position: relative;
+        z-index: 10;
+
+        h1 {
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 2rem;
+            line-height: 2rem;
+            padding: 16px 0 16px 260px;
+            margin: 0;
+        }
+    }
+
+    .project-details {
+        h2 {
+            padding: 16px 0 16px 260px;
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        h3 {
+            padding: 0 0 0 260px;
+            font-size: 1rem;
+
+            svg {
+                margin-left: 16px;
+            }
+        }
+    }
+
+    .timeline {
+        margin-top: 48px;
+
+        > .row {
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .day {
+            font-weight: bold;
+            color: $muted;
+            font-family: "Montserrat", Helvetica, Arial, sans-serif;
+            text-transform: uppercase;
+        }
+
+        .dot {
+            text-align: center;
+        }
+
+        .achievement {
+            @include background-gradient();
+            color: #FFFFFF;
+
+            svg {
+                margin: 16px 16px 16px 0;
+            }
+
+            h3 {
+                color: #FFFFFF;
+                font-size: 1.5rem;
+                margin: 16px 0 0 0;
+            }
+        }
+    }
+
+    .project-message {
+        text-align: center;
+
+        h3 {
+            margin-top: 32px;
+            color: $muted;
+        }
+    }
 }

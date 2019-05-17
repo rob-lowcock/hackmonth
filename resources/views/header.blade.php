@@ -25,12 +25,18 @@
         </div>
         <nav class="col-sm-6">
             <ul>
+                @if(Auth::check())
                 <li>
-                    <a href="#" class="active">
+                    <a href="/user/{{Auth::user()->nickname}}"
+                       @if(parse_url(url()->current(), PHP_URL_PATH) == "/user/" . Auth::user()->nickname)
+                       class="active"
+                       @endif
+                    >
                         My project
                         <div class="hover-underline"></div>
                     </a>
                 </li>
+                @endif
                 <li>
                     <a href="https://discuss.hackmonth.org">
                         Forums
