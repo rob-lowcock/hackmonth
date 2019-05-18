@@ -26,26 +26,8 @@ class UserController extends Controller
         }
 
         $user = User::where('nickname', $username)->firstOrFail();
-        $project = $user->projects->sortByDesc('created_at')->first();
-
-        return view('user.profile', ['is_current' => $is_me, 'user' => $user, 'project' => $project]);
-    }
-
-    /**
-     * Show the profile edit page
-     *
-     * @param Request $request
-     * @return View
-     */
-    public function edit(Request $request) {
-        $user = Auth::user();
-
-        $client = new Client();
-        $client->authenticate($user->github_token, null, Client::AUTH_URL_TOKEN);
-        $repos = $client->currentUser()->repositories();
-
         $project = $user->projects()->orderBy('created_at', 'desc')->first();
 
-        return view('user.edit', ['repos' => $repos, 'project' => $project]);
+        return view('user.profile', ['is_current' => $is_me, 'user' => $user, 'project' => $project]);
     }
 }

@@ -28,9 +28,9 @@
                 @if(Auth::check())
                 <li>
                     <a href="/user/{{Auth::user()->nickname}}"
-                       @if(parse_url(url()->current(), PHP_URL_PATH) == "/user/" . Auth::user()->nickname)
-                       class="active"
-                       @endif
+                        @if(parse_url(url()->current(), PHP_URL_PATH) == "/user/" . Auth::user()->nickname)
+                            class="active"
+                        @endif
                     >
                         My project
                         <div class="hover-underline"></div>

@@ -34,7 +34,7 @@ class SSOController extends Controller
         }
 
         // 2. Perform authentication
-        $user = Session::get('user');
+        $user = Auth::user();
 
         if (is_null($user)) {
             Log::debug("No user in session. Redirecting to GitHub login controller");
@@ -54,8 +54,8 @@ class SSOController extends Controller
         // 3. Create new payload with nonce, email and external_id
         $outputPayload = base64_encode(http_build_query([
             'nonce' => $inputPayload['nonce'],
-            'email' => $user['email'],
-            'external_id' => $user['id']
+            'email' => $user->email,
+            'external_id' => $user->id
         ]));
         $outputSig = hash_hmac('sha256', $outputPayload, $discourseSSOSecret);
 

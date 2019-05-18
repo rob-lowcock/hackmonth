@@ -175,7 +175,11 @@
                                 <path class="cls-1" d="M109.77,173.92l-20.56-6.23"></path>
                             </g>
                         </svg>
-                        <h3>{{ $user->name }} hasn't set up a project yet.</h3>
+                        @if($is_current)
+                            <h3>You haven't set up a project yet. <a href="{{ route('edit_project') }}">Create one here</a>.</h3>
+                        @else
+                            <h3>{{ $user->name }} hasn't set up a project yet.</h3>
+                        @endif
                     </div>
                 </div>
             </div>
