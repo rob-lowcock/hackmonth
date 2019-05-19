@@ -6,7 +6,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <form action="/project/edit" method="POST">
+                <form action="/project/edit" method="POST" class="form">
+                    <h1>My project</h1>
+
                     @csrf
                     <div class="form-group">
                         <label for="title">Project Title</label>
