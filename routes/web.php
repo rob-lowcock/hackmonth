@@ -25,3 +25,4 @@ Route::resource('user', 'UserController')->only([
 ]);
 
 Route::get('project/edit', 'ProjectController@edit')->name('edit_project');
+Route::post('project/save', 'ProjectController@save')->name('save_project');

@@ -300,6 +300,24 @@ select {
             font-weight: bold;
             color: $muted;
             text-transform: uppercase;
+
+            span {
+                text-transform: lowercase;
+                font-weight: normal;
+            }
+        }
+
+        .btn {
+            border: none;
+            border-radius: 0;
+
+            &.btn-primary {
+                @include background-gradient();
+
+                &:hover {
+                    background-image: none;
+                }
+            }
         }
     }
 }
