@@ -12,16 +12,12 @@
                     @csrf
                     <div class="form-group">
                         <label for="title">Project Title</label>
-                        <input type="text" name="title" id="title" value="{{ $project->title }}" class="form-control
-                            @if($errors->get('title'))
-                                is-invalid
-                            @endif
-                        ">
-                        @if($errors->get('title'))
+                        <input type="text" name="title" id="title" value="{{ $project->title }}" class="form-control @error('title') is-invalid @enderror">
+                        @error('title')
                             <div class="invalid-feedback">
-                                {{ $errors->first('title') }}
+                                {{ $message }}
                             </div>
-                        @endif
+                        @enderror
                     </div>
 
                     <div class="form-group">
@@ -31,11 +27,7 @@
 
                     <div class="form-group">
                         <label for="repo">Repository</label>
-                        <select name="repository" class="form-control
-                            @if($errors->get('repository'))
-                                is-invalid
-                            @endif
-                        " id="repo">
+                        <select name="repository" class="form-control @error('repository') is-invalid @enderror" id="repo">
                             <option disabled
                                     @if(!$project->repo)
                                         selected
@@ -49,11 +41,11 @@
                                 >{{ $repo['full_name'] }}</option>
                             @endforeach
                         </select>
-                        @if($errors->get('repository'))
+                        @error('repository')
                             <div class="invalid-feedback">
-                                {{ $errors->first('repository') }}
+                                {{ $message }}
                             </div>
-                        @endif
+                        @enderror
                     </div>
 
                     <div class="form-group text-right">
