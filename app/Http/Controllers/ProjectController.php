@@ -19,13 +19,18 @@ class ProjectController extends Controller
     public function edit(Request $request) {
         $user = Auth::user();
 
-        $client = new Client();
-        $client->authenticate($user->github_token, null, Client::AUTH_URL_TOKEN);
-        $repos = $client->currentUser()->repositories();
+        try {
+            $client = new Client();
+            $client->authenticate($user->github_token, null, Client::AUTH_URL_TOKEN);
+            $repos = $client->currentUser()->repositories();
 
-        $project = $user->projects()->orderBy('created_at', 'desc')->first() ?? new Project();
+            $project = $user->projects()->orderBy('created_at', 'desc')->first() ?? new Project();
 
-        return view('project.edit', ['repos' => $repos, 'project' => $project]);
+            return view('project.edit', ['repos' => $repos, 'project' => $project]);
+        } catch (\Exception $e) {
+            abort(500, "Couldn't connect to GitHub");
+        }
+
     }
 
     /**

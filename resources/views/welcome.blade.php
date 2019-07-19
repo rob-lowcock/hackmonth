@@ -14,7 +14,7 @@
         <div id="app" class="welcome">
             <header class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-4">
                         <svg viewBox="0 0 461 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
                                 <linearGradient x1="9.71451271%" y1="41.6655228%" x2="97.4933389%" y2="58.364035%" id="linearGradient-1">
@@ -33,7 +33,7 @@
                             </g>
                         </svg>
                     </div>
-                    <nav class="col-sm-6">
+                    <nav class="col-sm-8">
                         <ul>
                             <li>
                                 <a href="https://discuss.hackmonth.org">
@@ -54,7 +54,7 @@
             <section class="billboard">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-8">
+                        <div class="col-sm-6">
                             <h1>Challenge yourself:<br>Go from zero code to launch in just 30 days</h1>
                             <div class="signup">
                                 <a href="/login/github">Sign In with GitHub<svg width="41px" height="40px" viewBox="0 0 41 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -70,6 +70,7 @@
                                 <p class="signup-explanation">to track your progress</p>
                             </div>
                         </div>
+                        <div class="col-sm-2"></div>
                         <div class="col-sm-4 illustration">
                             <svg width="451px" height="472px" viewBox="0 0 451 472" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">

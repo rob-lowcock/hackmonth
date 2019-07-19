@@ -47,7 +47,7 @@ select {
     nav {
         ul {
             list-style-type: none;
-            margin: 48px 0 0 0;
+            margin: 24px 0 0 0;
             padding: 0;
             text-align: right;
             font-family: "Montserrat", Helvetica, Arial, sans-serif;
@@ -85,7 +85,7 @@ select {
 
         h1 {
             color: #FFFFFF;
-            font-size: 3.25rem;
+            font-size: 2rem;
             padding: 48px 0;
         }
 
@@ -99,7 +99,7 @@ select {
             background-color: #FFFFFF;
             background-image: none;
             color: $primary;
-            font-size: 2rem;
+            font-size: 1.6rem;
             font-family: "Montserrat", Helvetica, Arial, sans-serif;
             text-align: center;
             line-height: 4rem;
@@ -124,13 +124,17 @@ select {
         
         .illustration svg {
             position: absolute;
-            top: 48px;
+            top: 32px;
         }
     }
 
     .prompt {
         text-align: center;
         padding: 48px 0;
+
+        h2 {
+            padding-top: 16px;
+        }
     }
 
     .or {
